@@ -9,10 +9,27 @@
 import UIKit
 
 class MainViewController: UITabBarController {
+    private lazy var publishBtn : UIButton = UIButton(imageName: "tabbar_compose_icon_add" , imageBGName: "tabbar_compose_button")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        initSubViewControler()
+        initPublishButton()
+    }
+    
+    
+    
+}
+
+
+
+extension MainViewController {
+    private func initPublishButton() {
+        tabBar.addSubview(publishBtn)
+        publishBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
+    }
+    
+    private func initSubViewControler() {
         guard let path = Bundle.main.path(forResource: "MainVCSettings", ofType: "json") else {
             return
         }
@@ -27,29 +44,38 @@ class MainViewController: UITabBarController {
             return
         }
         
-        
-        for dic in dicArray {
-            guard let vcName = dic["vcName"] else {
+        let count = dicArray.count
+        for i in 0 ..< count {
+            if i == count/2 {
+                addChildViewController("", title: "", imageName: "")
+            }
+            
+            guard let vcName = dicArray[i]["vcName"] else {
                 continue
             }
-            guard let imageName = dic["imageName"] else{
+            guard let imageName = dicArray[i]["imageName"] else{
                 continue
             }
-            guard let displayName = dic["title"] else{
+            guard let displayName = dicArray[i]["title"] else{
                 continue
             }
             addChildViewController(vcName,title: displayName, imageName: imageName)
         }
         
     }
-    
-    
-    private func addChildViewController(_ childController: String, title:String, imageName: String) {
+    private func addChildViewController(_ childString: String, title:String, imageName: String) {
+        if childString.count == 0 {
+            //add dummy vc
+            let dummyVC = UIViewController()
+            dummyVC.tabBarItem.isEnabled = false
+            addChildViewController(dummyVC)
+            return
+        }
         guard let nameSpace = Bundle.main.object(forInfoDictionaryKey: "CFBundleExecutable") as? String else{
             print("cant get bundle name")
             return
         }
-        guard let childVC = NSClassFromString(nameSpace + "." + childController) else {
+        guard let childVC = NSClassFromString(nameSpace + "." + childString) else {
             print("can't get child controller")
             return
         }
