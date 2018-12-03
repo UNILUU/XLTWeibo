@@ -9,7 +9,7 @@
 import UIKit
 
 class BaseTableViewController: UITableViewController {
-    var isLogin : Bool = false
+    var isLogin : Bool = true
     let visitorView : VisitorView = VisitorView.visitorView()
     
     override func loadView() {

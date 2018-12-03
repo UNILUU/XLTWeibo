@@ -21,6 +21,8 @@
 		15D720EC21B4ECD200D4F489 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D720EB21B4ECD200D4F489 /* BaseTableViewController.swift */; };
 		15D720EE21B4EDA000D4F489 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D720ED21B4EDA000D4F489 /* VisitorView.swift */; };
 		15D720F021B4F23C00D4F489 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D720EF21B4F23C00D4F489 /* VisitorView.xib */; };
+		15D720F221B521EF00D4F489 /* UIBarButtonItem-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D720F121B521EF00D4F489 /* UIBarButtonItem-extension.swift */; };
+		15D720F521B5284A00D4F489 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D720F421B5284A00D4F489 /* TitleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		15D720EB21B4ECD200D4F489 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		15D720ED21B4EDA000D4F489 /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
 		15D720EF21B4F23C00D4F489 /* VisitorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
+		15D720F121B521EF00D4F489 /* UIBarButtonItem-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-extension.swift"; sourceTree = "<group>"; };
+		15D720F421B5284A00D4F489 /* TitleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +152,8 @@
 		15D720E721B4DB1200D4F489 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				15D720E821B4DB2D00D4F489 /* UIButton-extension.swift */,
+				15D720F321B5282700D4F489 /* Catagery */,
+				15D720F421B5284A00D4F489 /* TitleButton.swift */,
 			);
 			name = Tools;
 			path = XLTWeibo/Tools;
@@ -162,6 +167,15 @@
 				15D720EF21B4F23C00D4F489 /* VisitorView.xib */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		15D720F321B5282700D4F489 /* Catagery */ = {
+			isa = PBXGroup;
+			children = (
+				15D720E821B4DB2D00D4F489 /* UIButton-extension.swift */,
+				15D720F121B521EF00D4F489 /* UIBarButtonItem-extension.swift */,
+			);
+			path = Catagery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +255,8 @@
 				159DA0BE21B4917600FF1529 /* HomeTableViewController.swift in Sources */,
 				15D720EC21B4ECD200D4F489 /* BaseTableViewController.swift in Sources */,
 				15D720E921B4DB2D00D4F489 /* UIButton-extension.swift in Sources */,
+				15D720F521B5284A00D4F489 /* TitleButton.swift in Sources */,
+				15D720F221B521EF00D4F489 /* UIBarButtonItem-extension.swift in Sources */,
 				159DA0C021B4918400FF1529 /* DiscoverTableViewController.swift in Sources */,
 				159DA0C621B4922800FF1529 /* MainViewController.swift in Sources */,
 				159DA0C221B4919100FF1529 /* MessageTableViewController.swift in Sources */,
@@ -389,7 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P68JQ97L97;
@@ -410,7 +426,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P68JQ97L97;
