@@ -22,10 +22,11 @@ class MainViewController: UITabBarController {
 }
 
 
-
+//MARK: set up sub view controller
 extension MainViewController {
     private func initPublishButton() {
         tabBar.addSubview(publishBtn)
+        publishBtn.addTarget(self, action:#selector(MainViewController.publishBtnClick), for: .touchUpInside)
         publishBtn.center = CGPoint(x: tabBar.center.x, y: tabBar.bounds.size.height * 0.5)
     }
     
@@ -91,4 +92,13 @@ extension MainViewController {
         let childNavC = UINavigationController(rootViewController: childController)
         addChildViewController(childNavC)
     }
+}
+
+//MARK: event
+extension MainViewController{
+    @objc private func publishBtnClick() {
+        print("sssss")
+    }
+    
+    
 }

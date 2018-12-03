@@ -18,6 +18,9 @@
 		15C2FC5421B4BC42005526D2 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C2FC5321B4BC42005526D2 /* ProfileTableViewController.swift */; };
 		15C2FC5721B4BC6D005526D2 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 15C2FC5621B4BC6D005526D2 /* MainVCSettings.json */; };
 		15D720E921B4DB2D00D4F489 /* UIButton-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D720E821B4DB2D00D4F489 /* UIButton-extension.swift */; };
+		15D720EC21B4ECD200D4F489 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D720EB21B4ECD200D4F489 /* BaseTableViewController.swift */; };
+		15D720EE21B4EDA000D4F489 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D720ED21B4EDA000D4F489 /* VisitorView.swift */; };
+		15D720F021B4F23C00D4F489 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D720EF21B4F23C00D4F489 /* VisitorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		15C2FC5321B4BC42005526D2 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		15C2FC5621B4BC6D005526D2 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		15D720E821B4DB2D00D4F489 /* UIButton-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-extension.swift"; sourceTree = "<group>"; };
+		15D720EB21B4ECD200D4F489 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		15D720ED21B4EDA000D4F489 /* VisitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		15D720EF21B4F23C00D4F489 /* VisitorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,7 @@
 		15B8E6AD21B392E700E29B8D /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				15D720EA21B4ECBF00D4F489 /* Base */,
 				159DA0C521B4922800FF1529 /* MainViewController.swift */,
 				15C2FC5521B4BC6D005526D2 /* Resource */,
 			);
@@ -146,6 +153,16 @@
 			name = Tools;
 			path = XLTWeibo/Tools;
 			sourceTree = SOURCE_ROOT;
+		};
+		15D720EA21B4ECBF00D4F489 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				15D720EB21B4ECD200D4F489 /* BaseTableViewController.swift */,
+				15D720ED21B4EDA000D4F489 /* VisitorView.swift */,
+				15D720EF21B4F23C00D4F489 /* VisitorView.xib */,
+			);
+			path = Base;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -206,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C2FC5721B4BC6D005526D2 /* MainVCSettings.json in Resources */,
+				15D720F021B4F23C00D4F489 /* VisitorView.xib in Resources */,
 				15720F1321B3892A004D97DF /* LaunchScreen.storyboard in Resources */,
 				15720F1021B3892A004D97DF /* Assets.xcassets in Resources */,
 				15720F0E21B38929004D97DF /* Main.storyboard in Resources */,
@@ -221,10 +239,12 @@
 			files = (
 				15C2FC5421B4BC42005526D2 /* ProfileTableViewController.swift in Sources */,
 				159DA0BE21B4917600FF1529 /* HomeTableViewController.swift in Sources */,
+				15D720EC21B4ECD200D4F489 /* BaseTableViewController.swift in Sources */,
 				15D720E921B4DB2D00D4F489 /* UIButton-extension.swift in Sources */,
 				159DA0C021B4918400FF1529 /* DiscoverTableViewController.swift in Sources */,
 				159DA0C621B4922800FF1529 /* MainViewController.swift in Sources */,
 				159DA0C221B4919100FF1529 /* MessageTableViewController.swift in Sources */,
+				15D720EE21B4EDA000D4F489 /* VisitorView.swift in Sources */,
 				15720F0921B38929004D97DF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

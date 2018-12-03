@@ -8,6 +8,9 @@
 
 import UIKit
 
-class ProfileTableViewController: UITableViewController {
-
+class ProfileTableViewController: BaseTableViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        visitorView.setupVisitorView(iconName: "visitordiscover_image_profile", title: "Log in to check your profile")
+    }
 }
