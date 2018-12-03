@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ProfileTableViewController: UITabViewController {
+class ProfileTableViewController: UITableViewController {
 
 }
