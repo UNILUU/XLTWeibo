@@ -9,28 +9,39 @@
 import UIKit
 
 class TitleButton: UIButton {
-
-     convenience init(frame: CGRec, title:String) {
-        self.init(frame: frame)
-        setImage(UIImage(named: "navigationbar_arrow_down" ), for:.normal)
-        setImage(UIImage(named: "navigationbar_arrow_up" ), for:.selected)
-        setTitle(title, for: .normal)
-        setTitleColor(UIColor.purple, for: .normal)
-        sizeToFit()
-    }
+    lazy var imgView = UIImageView()
+    lazy var label = UILabel()
     
+    override init(frame: CGRect){
+        super.init(frame: frame)
+        
+        label.textColor = UIColor.purple
+        imgView.sizeToFit()
+        imgView.translatesAutoresizingMaskIntoConstraints = false
+        label.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(label)
+        addSubview(imgView)
+        isUserInteractionEnabled = true
+        
+        isSelected = false
+        imgView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
+        label.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        imgView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+        label.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
+        label.trailingAnchor.constraint(equalTo: imgView.leadingAnchor, constant: -8).isActive = true
+        
+    }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        imageView?.sizeToFit()
-        titleLabel?.widthAnchor .constraint(equalToConstant: 40).isActive = true
-        titleLabel?.leftAnchor .constraint(equalTo: self.leftAnchor).isActive = true
-        imageView?.leftAnchor .constraint(equalTo: titleLabel!.rightAnchor).isActive = true
-//        imageView?.rightAnchor .constraint(equalTo: self.rightAnchor).isActive = true
-        
+    override open var isSelected: Bool {
+        didSet {
+            if isSelected{
+                imgView.image = UIImage(named: "navigationbar_arrow_up")
+            }else {
+                imgView.image = UIImage(named: "navigationbar_arrow_down" )
+            }
+        }
     }
 }

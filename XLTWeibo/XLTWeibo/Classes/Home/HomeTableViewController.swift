@@ -9,7 +9,10 @@
 import UIKit
 
 class HomeTableViewController: BaseTableViewController {
-    lazy private var titleButon = TitleButton(coder: <#T##NSCoder#>)
+    lazy private var titleButon = TitleButton()
+    lazy private var popOverAnimator = PopOverAnimator {[weak self] (presented) in
+        self?.titleButon.isSelected = presented
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         if !isLogin {
@@ -36,9 +39,10 @@ extension HomeTableViewController {
     private func setupNavigationBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "navigationbar_friendattention")
         navigationItem.rightBarButtonItem = UIBarButtonItem(imageName: "navigationbar_pop")
-        titleButon.setTitle("Home", for: .normal)
+        titleButon.label.text = "Home"
         titleButon.addTarget(self, action: #selector(HomeTableViewController.titleBtnClick), for: .touchUpInside)
         navigationItem.titleView = titleButon
+        
     }
 }
 
@@ -47,5 +51,12 @@ extension HomeTableViewController {
 extension HomeTableViewController{
     @objc private func titleBtnClick() {
         titleButon.isSelected = !titleButon.isSelected
+        let popover = PopoverViewController()
+        popover.modalPresentationStyle = .custom
+        
+        popOverAnimator.popOverViewFrame = CGRect(x: view.bounds.size.width / 2 - 100, y: 50, width: 200, height: 300)
+        popover.transitioningDelegate = popOverAnimator
+        present(popover, animated: true, completion: nil)
     }
 }
+
