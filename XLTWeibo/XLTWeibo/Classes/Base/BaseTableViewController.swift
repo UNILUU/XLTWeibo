@@ -9,12 +9,12 @@
 import UIKit
 
 class BaseTableViewController: UITableViewController {
-    var isLogin : Bool = true
     let visitorView : VisitorView = VisitorView.visitorView()
-    
+    var isLogIn : Bool = UserModal.sharedInstance.isLoggedIn
     override func loadView() {
-        isLogin ? super.loadView():setUpVisiterView()
+        print(UserModal.sharedInstance.accountPath)
         
+        UserModal.sharedInstance.isLoggedIn ? super.loadView() : setUpVisiterView()
     }
     override func viewDidLoad() {
         setNevigationItem()
@@ -39,8 +39,12 @@ extension BaseTableViewController {
 //MARK: action
 extension BaseTableViewController {
     @objc private func login(){
-        print("log in")
+        let loginVC = OAuth2ViewController()
+        let naviVC = UINavigationController(rootViewController: loginVC)
+        naviVC.modalPresentationStyle = .custom
+        present(naviVC, animated: true, completion: nil)
     }
+    
     @objc private func register() {
         print("register")
     }

@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15236B3921BC99DB00AB0762 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B3721BC99DB00AB0762 /* WelcomeViewController.swift */; };
+		15236B3A21BC99DB00AB0762 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15236B3821BC99DB00AB0762 /* WelcomeViewController.xib */; };
+		15236B3C21BC9FC500AB0762 /* UserModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B3B21BC9FC500AB0762 /* UserModal.swift */; };
+		15236B3F21BDB22E00AB0762 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B3E21BDB22E00AB0762 /* Status.swift */; };
+		15236B4421BDB83900AB0762 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B4221BDB83900AB0762 /* HomeTableViewCell.swift */; };
+		15236B4521BDB83900AB0762 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15236B4321BDB83900AB0762 /* HomeTableViewCell.xib */; };
+		15236B4721BDCBF700AB0762 /* NSDate-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B4621BDCBF700AB0762 /* NSDate-extension.swift */; };
 		15720F0921B38929004D97DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15720F0821B38929004D97DF /* AppDelegate.swift */; };
 		15720F0E21B38929004D97DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15720F0C21B38929004D97DF /* Main.storyboard */; };
 		15720F1021B3892A004D97DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15720F0F21B3892A004D97DF /* Assets.xcassets */; };
 		15720F1321B3892A004D97DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15720F1121B3892A004D97DF /* LaunchScreen.storyboard */; };
+		1573B1A921B8E59800EBD518 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573B1A821B8E59800EBD518 /* AppInfo.swift */; };
+		1573B1AC21B8E65900EBD518 /* OAuth2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573B1AB21B8E65900EBD518 /* OAuth2ViewController.swift */; };
+		1573B1B021B8E9A300EBD518 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1573B1AF21B8E9A200EBD518 /* WebKit.framework */; };
+		1573B1B221B8F7B000EBD518 /* NetWorkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1573B1B121B8F7B000EBD518 /* NetWorkingManager.swift */; };
 		159DA0BE21B4917600FF1529 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159DA0BD21B4917600FF1529 /* HomeTableViewController.swift */; };
 		159DA0C021B4918400FF1529 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159DA0BF21B4918400FF1529 /* DiscoverTableViewController.swift */; };
 		159DA0C221B4919100FF1529 /* MessageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159DA0C121B4919100FF1529 /* MessageTableViewController.swift */; };
@@ -27,15 +38,28 @@
 		15DA4C9621B63F2C009B75A8 /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DA4C9421B63F2C009B75A8 /* PopoverViewController.xib */; };
 		15DA4C9821B640B2009B75A8 /* PopOverPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA4C9721B640B2009B75A8 /* PopOverPresentationController.swift */; };
 		15DA4C9A21B65AA4009B75A8 /* PopOverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DA4C9921B65AA4009B75A8 /* PopOverAnimator.swift */; };
+		15F4832921BA289200CA4639 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F4832821BA289200CA4639 /* UserAccount.swift */; };
+		6283AC8B666292218B296949 /* Pods_XLTWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D119CA17FE9FCD98993FE0 /* Pods_XLTWeibo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15236B3721BC99DB00AB0762 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		15236B3821BC99DB00AB0762 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		15236B3B21BC9FC500AB0762 /* UserModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModal.swift; sourceTree = "<group>"; };
+		15236B3E21BDB22E00AB0762 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		15236B4221BDB83900AB0762 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		15236B4321BDB83900AB0762 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		15236B4621BDCBF700AB0762 /* NSDate-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-extension.swift"; sourceTree = "<group>"; };
 		15720F0521B38929004D97DF /* XLTWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLTWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15720F0821B38929004D97DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15720F0D21B38929004D97DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15720F0F21B3892A004D97DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15720F1221B3892A004D97DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15720F1421B3892A004D97DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1573B1A821B8E59800EBD518 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		1573B1AB21B8E65900EBD518 /* OAuth2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2ViewController.swift; sourceTree = "<group>"; };
+		1573B1AF21B8E9A200EBD518 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1573B1B121B8F7B000EBD518 /* NetWorkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkingManager.swift; sourceTree = "<group>"; };
 		159DA0BD21B4917600FF1529 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		159DA0BF21B4918400FF1529 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		159DA0C121B4919100FF1529 /* MessageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +76,10 @@
 		15DA4C9421B63F2C009B75A8 /* PopoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		15DA4C9721B640B2009B75A8 /* PopOverPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverPresentationController.swift; sourceTree = "<group>"; };
 		15DA4C9921B65AA4009B75A8 /* PopOverAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverAnimator.swift; sourceTree = "<group>"; };
+		15F4832821BA289200CA4639 /* UserAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		45D119CA17FE9FCD98993FE0 /* Pods_XLTWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XLTWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD7E0B6525DA0FC78C3BD18 /* Pods-XLTWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLTWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLTWeibo/Pods-XLTWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+		FC1EC1C14EBE200DDD764012 /* Pods-XLTWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLTWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLTWeibo/Pods-XLTWeibo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +87,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1573B1B021B8E9A300EBD518 /* WebKit.framework in Frameworks */,
+				6283AC8B666292218B296949 /* Pods_XLTWeibo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15236B3D21BDB20800AB0762 /* HomeViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				15236B3E21BDB22E00AB0762 /* Status.swift */,
+			);
+			path = HomeViewModal;
+			sourceTree = "<group>";
+		};
 		15720EFC21B38929004D97DF = {
 			isa = PBXGroup;
 			children = (
 				15720F0721B38929004D97DF /* XLTWeibo */,
 				15720F0621B38929004D97DF /* Products */,
+				5F810AFD3A57CEAEA260F6B4 /* Pods */,
+				9AAE71C59E2A21B0D55E2C8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +135,23 @@
 			path = XLTWeibo;
 			sourceTree = "<group>";
 		};
+		1573B1AA21B8E63100EBD518 /* OAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				1573B1AB21B8E65900EBD518 /* OAuth2ViewController.swift */,
+				15F4832821BA289200CA4639 /* UserAccount.swift */,
+				15236B3B21BC9FC500AB0762 /* UserModal.swift */,
+				15236B3721BC99DB00AB0762 /* WelcomeViewController.swift */,
+				15236B3821BC99DB00AB0762 /* WelcomeViewController.xib */,
+			);
+			path = OAuth2;
+			sourceTree = "<group>";
+		};
 		15B8E6A821B392E700E29B8D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1573B1AA21B8E63100EBD518 /* OAuth2 */,
+				15D720EA21B4ECBF00D4F489 /* Base */,
 				15B8E6AD21B392E700E29B8D /* Main */,
 				15B8E6A921B392E700E29B8D /* Home */,
 				15B8E6AA21B392E700E29B8D /* Discover */,
@@ -110,8 +164,11 @@
 		15B8E6A921B392E700E29B8D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				15DA4C9021B63EB3009B75A8 /* Popover */,
+				15236B3D21BDB20800AB0762 /* HomeViewModal */,
 				159DA0BD21B4917600FF1529 /* HomeTableViewController.swift */,
+				15DA4C9021B63EB3009B75A8 /* Popover */,
+				15236B4221BDB83900AB0762 /* HomeTableViewCell.swift */,
+				15236B4321BDB83900AB0762 /* HomeTableViewCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -143,7 +200,6 @@
 		15B8E6AD21B392E700E29B8D /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				15D720EA21B4ECBF00D4F489 /* Base */,
 				159DA0C521B4922800FF1529 /* MainViewController.swift */,
 				15C2FC5521B4BC6D005526D2 /* Resource */,
 			);
@@ -163,6 +219,8 @@
 			children = (
 				15D720F321B5282700D4F489 /* Catagery */,
 				15D720F421B5284A00D4F489 /* TitleButton.swift */,
+				1573B1A821B8E59800EBD518 /* AppInfo.swift */,
+				1573B1B121B8F7B000EBD518 /* NetWorkingManager.swift */,
 			);
 			name = Tools;
 			path = XLTWeibo/Tools;
@@ -183,6 +241,7 @@
 			children = (
 				15D720E821B4DB2D00D4F489 /* UIButton-extension.swift */,
 				15D720F121B521EF00D4F489 /* UIBarButtonItem-extension.swift */,
+				15236B4621BDCBF700AB0762 /* NSDate-extension.swift */,
 			);
 			path = Catagery;
 			sourceTree = "<group>";
@@ -198,6 +257,24 @@
 			path = Popover;
 			sourceTree = "<group>";
 		};
+		5F810AFD3A57CEAEA260F6B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DD7E0B6525DA0FC78C3BD18 /* Pods-XLTWeibo.debug.xcconfig */,
+				FC1EC1C14EBE200DDD764012 /* Pods-XLTWeibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9AAE71C59E2A21B0D55E2C8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1573B1AF21B8E9A200EBD518 /* WebKit.framework */,
+				45D119CA17FE9FCD98993FE0 /* Pods_XLTWeibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15720F1721B3892A004D97DF /* Build configuration list for PBXNativeTarget "XLTWeibo" */;
 			buildPhases = (
+				34B8B96D8C59658A813C96F3 /* [CP] Check Pods Manifest.lock */,
 				15720F0121B38929004D97DF /* Sources */,
 				15720F0221B38929004D97DF /* Frameworks */,
 				15720F0321B38929004D97DF /* Resources */,
+				39982C14852978FDFAF132FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +336,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15C2FC5721B4BC6D005526D2 /* MainVCSettings.json in Resources */,
+				15236B3A21BC99DB00AB0762 /* WelcomeViewController.xib in Resources */,
+				15236B4521BDB83900AB0762 /* HomeTableViewCell.xib in Resources */,
 				15D720F021B4F23C00D4F489 /* VisitorView.xib in Resources */,
 				15DA4C9621B63F2C009B75A8 /* PopoverViewController.xib in Resources */,
 				15720F1321B3892A004D97DF /* LaunchScreen.storyboard in Resources */,
@@ -267,6 +348,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		34B8B96D8C59658A813C96F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XLTWeibo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39982C14852978FDFAF132FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XLTWeibo/Pods-XLTWeibo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XLTWeibo/Pods-XLTWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15720F0121B38929004D97DF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -274,18 +400,27 @@
 			files = (
 				15C2FC5421B4BC42005526D2 /* ProfileTableViewController.swift in Sources */,
 				159DA0BE21B4917600FF1529 /* HomeTableViewController.swift in Sources */,
+				15236B3F21BDB22E00AB0762 /* Status.swift in Sources */,
+				15F4832921BA289200CA4639 /* UserAccount.swift in Sources */,
+				1573B1A921B8E59800EBD518 /* AppInfo.swift in Sources */,
 				15D720EC21B4ECD200D4F489 /* BaseTableViewController.swift in Sources */,
+				15236B4721BDCBF700AB0762 /* NSDate-extension.swift in Sources */,
 				15D720E921B4DB2D00D4F489 /* UIButton-extension.swift in Sources */,
 				15DA4C9A21B65AA4009B75A8 /* PopOverAnimator.swift in Sources */,
 				15DA4C9521B63F2C009B75A8 /* PopoverViewController.swift in Sources */,
+				1573B1AC21B8E65900EBD518 /* OAuth2ViewController.swift in Sources */,
+				1573B1B221B8F7B000EBD518 /* NetWorkingManager.swift in Sources */,
+				15236B3C21BC9FC500AB0762 /* UserModal.swift in Sources */,
 				15D720F521B5284A00D4F489 /* TitleButton.swift in Sources */,
 				15D720F221B521EF00D4F489 /* UIBarButtonItem-extension.swift in Sources */,
 				159DA0C021B4918400FF1529 /* DiscoverTableViewController.swift in Sources */,
 				15DA4C9821B640B2009B75A8 /* PopOverPresentationController.swift in Sources */,
+				15236B4421BDB83900AB0762 /* HomeTableViewCell.swift in Sources */,
 				159DA0C621B4922800FF1529 /* MainViewController.swift in Sources */,
 				159DA0C221B4919100FF1529 /* MessageTableViewController.swift in Sources */,
 				15D720EE21B4EDA000D4F489 /* VisitorView.swift in Sources */,
 				15720F0921B38929004D97DF /* AppDelegate.swift in Sources */,
+				15236B3921BC99DB00AB0762 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +562,7 @@
 		};
 		15720F1821B3892A004D97DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD7E0B6525DA0FC78C3BD18 /* Pods-XLTWeibo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -448,6 +584,7 @@
 		};
 		15720F1921B3892A004D97DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC1EC1C14EBE200DDD764012 /* Pods-XLTWeibo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

@@ -10,19 +10,15 @@ import UIKit
 
 class MainViewController: UITabBarController {
     private lazy var publishBtn : UIButton = UIButton(imageName: "tabbar_compose_icon_add" , imageBGName: "tabbar_compose_button")
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         initSubViewControler()
         initPublishButton()
     }
-    
-    
-    
 }
 
 
-//MARK: set up sub view controller
+//MARK: Set sub view controller
 extension MainViewController {
     private func initPublishButton() {
         tabBar.addSubview(publishBtn)
@@ -94,7 +90,7 @@ extension MainViewController {
     }
 }
 
-//MARK: event
+//MARK: Event
 extension MainViewController{
     @objc private func publishBtnClick() {
         print("sssss")
