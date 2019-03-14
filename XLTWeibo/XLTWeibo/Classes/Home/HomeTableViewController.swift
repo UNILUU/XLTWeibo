@@ -9,20 +9,22 @@
 import UIKit
 class HomeTableViewController: BaseTableViewController {
     lazy private var titleButon = TitleButton()
-    private var statues : [Status] = []
+    private var statuesModals : [StatusViewModal] = []
     lazy private var popOverAnimator = PopOverAnimator {[weak self] (presented) in
         self?.titleButon.isSelected = presented
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(HomeTableViewCell.self, forCellReuseIdentifier: "statusCell")
-        
+//        tableView?.register(HomeTableViewCell.self, forCellReuseIdentifier: "statusCell")
+        tableView?.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: "statusCell")// CustomTableViewCell.self, forCellReuseIdentifier: "customCell")
         if !isLogIn {
             visitorView.addRotationAnimation()
             return
         }
         setupNavigationBar()
         loadWeibo()
+//        tableView.rowHeight = UITableViewAutomaticDimension
+//        tableView.estimatedRowHeight = 44
     }
     
 }
@@ -36,14 +38,20 @@ extension HomeTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
- 
-        return statues.count
+        return statuesModals.count
     }
     
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
+    }
+
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "statusCell") as! HomeTableViewCell
-        
-        cell.textLabel?.text = statues[indexPath.row].text
+        let cell = tableView.dequeueReusableCell(withIdentifier: "statusCell", for: indexPath) as! HomeTableViewCell
+        cell.viewModal = statuesModals[indexPath.row]
+        cell.setNeedsUpdateConstraints()
+//        cell.updateConstraintsIfNeeded()
+//        [cell setNeedsUpdateConstraints];
+//        [cell updateConstraintsIfNeeded];
         return cell
     }
 }
@@ -61,7 +69,7 @@ extension HomeTableViewController {
             }
             for res in result {
                 let curr = Status(Dic: res)
-                self.statues.append(curr)
+                self.statuesModals.append(StatusViewModal(status: curr))
             }
             self.tableView?.reloadData()
         }

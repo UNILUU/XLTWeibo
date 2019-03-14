@@ -27,16 +27,16 @@ extension Date {
         let interval = Int(now.timeIntervalSince(createDate))
         
         if interval < 60 {
-            return "just now"
+            return "Now"
         }
         if interval < 60 * 60 {
-            return "\(interval / 60) mins"
+            return "\(interval / 60) mins ago"
         }
         
         
         let calendar = Calendar.current
         if calendar.isDateInToday(createDate){
-            return "\(interval / (60 * 60)) hrs"
+            return "\(interval / (60 * 60)) hrs ago"
         }
         
         if calendar.isDateInYesterday(createDate){

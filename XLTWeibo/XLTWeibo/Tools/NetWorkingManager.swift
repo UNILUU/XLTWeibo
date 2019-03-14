@@ -88,7 +88,7 @@ extension NetWorkingManager{
 extension NetWorkingManager {
     func getHomeTimeLine(completion: @escaping (_ result : [[String: Any]]?, _ error: Error? ) -> ()) {
         let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
-        let parameter = ["access_token" : UserModal.sharedInstance.user!.access_token]
+        let parameter = ["access_token" : UserModal.sharedInstance.user!.access_token, ]
         
         request(methodType: .GET, urlString: urlString, parameters: parameter) { (_ result, _ error)  -> () in
             guard error == nil else {

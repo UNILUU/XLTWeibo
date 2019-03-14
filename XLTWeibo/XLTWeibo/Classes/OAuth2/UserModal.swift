@@ -17,6 +17,7 @@ class UserModal {
     init() {
         //Load saved user
         user = NSKeyedUnarchiver.unarchiveObject(withFile: accountPath) as? UserAccount
+        
     }
     
     var accountPath: String {

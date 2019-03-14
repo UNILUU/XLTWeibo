@@ -14,6 +14,8 @@
 		15236B4421BDB83900AB0762 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B4221BDB83900AB0762 /* HomeTableViewCell.swift */; };
 		15236B4521BDB83900AB0762 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15236B4321BDB83900AB0762 /* HomeTableViewCell.xib */; };
 		15236B4721BDCBF700AB0762 /* NSDate-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B4621BDCBF700AB0762 /* NSDate-extension.swift */; };
+		15236B4921BDD40700AB0762 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B4821BDD40700AB0762 /* User.swift */; };
+		15236B4B21BDDAC000AB0762 /* StatusViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15236B4A21BDDAC000AB0762 /* StatusViewModal.swift */; };
 		15720F0921B38929004D97DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15720F0821B38929004D97DF /* AppDelegate.swift */; };
 		15720F0E21B38929004D97DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15720F0C21B38929004D97DF /* Main.storyboard */; };
 		15720F1021B3892A004D97DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15720F0F21B3892A004D97DF /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		15236B4221BDB83900AB0762 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		15236B4321BDB83900AB0762 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		15236B4621BDCBF700AB0762 /* NSDate-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDate-extension.swift"; sourceTree = "<group>"; };
+		15236B4821BDD40700AB0762 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		15236B4A21BDDAC000AB0762 /* StatusViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewModal.swift; sourceTree = "<group>"; };
 		15720F0521B38929004D97DF /* XLTWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLTWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15720F0821B38929004D97DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15720F0D21B38929004D97DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				15236B3E21BDB22E00AB0762 /* Status.swift */,
+				15236B4821BDD40700AB0762 /* User.swift */,
+				15236B4A21BDDAC000AB0762 /* StatusViewModal.swift */,
 			);
 			path = HomeViewModal;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			files = (
 				15C2FC5421B4BC42005526D2 /* ProfileTableViewController.swift in Sources */,
 				159DA0BE21B4917600FF1529 /* HomeTableViewController.swift in Sources */,
+				15236B4B21BDDAC000AB0762 /* StatusViewModal.swift in Sources */,
 				15236B3F21BDB22E00AB0762 /* Status.swift in Sources */,
 				15F4832921BA289200CA4639 /* UserAccount.swift in Sources */,
 				1573B1A921B8E59800EBD518 /* AppInfo.swift in Sources */,
@@ -418,6 +425,7 @@
 				15236B4421BDB83900AB0762 /* HomeTableViewCell.swift in Sources */,
 				159DA0C621B4922800FF1529 /* MainViewController.swift in Sources */,
 				159DA0C221B4919100FF1529 /* MessageTableViewController.swift in Sources */,
+				15236B4921BDD40700AB0762 /* User.swift in Sources */,
 				15D720EE21B4EDA000D4F489 /* VisitorView.swift in Sources */,
 				15720F0921B38929004D97DF /* AppDelegate.swift in Sources */,
 				15236B3921BC99DB00AB0762 /* WelcomeViewController.swift in Sources */,
